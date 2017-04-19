@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+}
+
+#wrapper {
+    width: max-content;
+    display: inline-block;
+    margin: 5%;
+}
+
+table tbody td {
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    padding: 5px;
+    font-size: 90px;
+}
+
+#row1 td {
+    border-top: none;
+}
+
+#row3 td {
+    border-bottom: none;
+}
+
+.l {
+    border-left: none;
+}
+
+.r {
+    border-right: none;
+}
+
+.red {
+    color: red;
+}
