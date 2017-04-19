@@ -19,6 +19,7 @@ $(document).ready(function() {
 
                 if(counter === 11) {
                     end = true;
+                    $("#restart").css('display', 'block');
                     alert("Game over! Nobody wins.");
                 }
             }
@@ -34,6 +35,7 @@ $(document).ready(function() {
             if($("#square12").text() === $("#square11").text()) {
                 if($("#square11").text() === $("#square13").text()) {
                     end = true;
+                    $("#restart").css('display', 'block');
                     $("#square11").addClass('red');
                     $("#square12").addClass('red');
                     $("#square13").addClass('red');
@@ -44,6 +46,7 @@ $(document).ready(function() {
             if($("#square21").text() === $("#square11").text()) {
                 if($("#square11").text() === $("#square31").text()) {
                     end = true;
+                    $("#restart").css('display', 'block');
                     $("#square11").addClass('red');
                     $("#square21").addClass('red');
                     $("#square31").addClass('red');
@@ -54,6 +57,7 @@ $(document).ready(function() {
             if($("#square22").text() === $("#square11").text()) {
                 if($("#square11").text() === $("#square33").text()) {
                     end = true;
+                    $("#restart").css('display', 'block');
                     $("#square11").addClass('red');
                     $("#square22").addClass('red');
                     $("#square33").addClass('red');
@@ -66,6 +70,7 @@ $(document).ready(function() {
             if($("#square22").text() === $("#square21").text()) {
                 if($("#square21").text() === $("#square23").text()) {
                     end = true;
+                    $("#restart").css('display', 'block');
                     $("#square21").addClass('red');
                     $("#square22").addClass('red');
                     $("#square23").addClass('red');
@@ -79,6 +84,7 @@ $(document).ready(function() {
             if($("#square32").text() === $("#square31").text()) {
                 if($("#square31").text() === $("#square33").text()) {
                     end = true;
+                    $("#restart").css('display', 'block');
                     $("#square31").addClass('red');
                     $("#square32").addClass('red');
                     $("#square33").addClass('red');
@@ -89,6 +95,7 @@ $(document).ready(function() {
             if($("#square22").text() === $("#square13").text()) {
                 if($("#square31").text() === $("#square13").text()) {
                     end = true;
+                    $("#restart").css('display', 'block');
                     $("#square31").addClass('red');
                     $("#square22").addClass('red');
                     $("#square13").addClass('red');
@@ -101,6 +108,7 @@ $(document).ready(function() {
             if($("#square22").text() === $("#square12").text()) {
                 if($("#square12").text() === $("#square32").text()) {
                     end = true;
+                    $("#restart").css('display', 'block');
                     $("#square12").addClass('red');
                     $("#square22").addClass('red');
                     $("#square32").addClass('red');
@@ -113,6 +121,7 @@ $(document).ready(function() {
             if($("#square23").text() === $("#square13").text()) {
                 if($("#square33").text() === $("#square13").text()) {
                     end = true;
+                    $("#restart").css('display', 'block');
                     $("#square13").addClass('red');
                     $("#square23").addClass('red');
                     $("#square33").addClass('red');
@@ -121,4 +130,11 @@ $(document).ready(function() {
             }
         }
     };
+
+    /* 
+        restart
+     */
+    $("#restart").on('click', function() {
+        location.reload();
+    });
 });
